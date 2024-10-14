@@ -1,0 +1,87 @@
+
+.adventure_Card_container{
+    width: 20rem;
+    height: 23rem;
+    padding-bottom: 1rem;
+}
+
+.adventure_Card_container .card_info_contaner{
+    height: 90%;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    overflow: hidden;
+}
+
+.swiper-slide {
+    width:100% !important;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.swiper-wrapper{
+    margin: 0;
+    padding-left: 0;
+}
+
+.adventure_Card_container .card_info_contaner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.adventure_Card_container .card_info_contaner p{
+    text-align: start;
+    width: 100%;
+}
+
+.card_info_contaner .card_userName{
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+.card_info_contaner .card_userInfo{
+    font-size: 0.8rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+}
+
+
+.adventure_Card_container .card_follower_container{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+}
+
+.card_follower_container p{
+    text-align: start;
+    width: fit-content;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding-left: 0;
+}
+
+
+
+@media (max-width:480px) {
+    
+.adventure_Card_container{
+    width: 15rem;
+    height: 18rem;
+}
+.card_follower_container p{
+    text-align: start;
+    width: fit-content;
+    font-size: 1rem;
+    font-weight: 600;
+}
+}

@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+ background-color: black;
+ background-image: url(./Assets/Images/colorDot_bg_new.png);
+ background-size:contain;
+ background-repeat: repeat;
+ overflow-x: hidden;
+}
+
+p{
+  font-family: "Comic Neue", cursive;
+  font-style: normal;
+}
+
+h1{
+  font-family: "Irish Grover", system-ui;
+  font-style: normal;
+}
+
+
+
+.hidden {
+  opacity: 0;
+  transition: opacity 0.4s ease-out, transform 0.1s ease-out;
+  transform:scale(0);
+}
+
+
+.transform_side{
+  opacity:0;
+  transition: opacity 1s ease-out, transform 0.6s ease-out;
+  transform:translateX(-200px);
+}
+
+.transform_other_side{
+  opacity:0;
+  transition: opacity 1s ease-out, transform 0.6s ease-out;
+  transform:translateX(200px);
+}
+
+
+.animate {
+  opacity: 1;
+  transform:scale(1) translateX(0px);
+}
+
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: #00000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #00549e;
+}

@@ -1,0 +1,120 @@
+.Tap_section_container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+    padding: 0 2rem 0 2rem;
+}
+
+.Tap_section_container .Tap_head_container{
+    color: white;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Tap_section_container .Tap_head_container p{
+    text-align: center;
+    width: 70%;
+    margin-top: 1rem;
+}
+
+
+.Tap_section_container .main_mobile_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.main_mobile_container .Mfraim{
+    background-image: url(../Assets/Images/Tap_feature_img/mobile_fraim.webp);
+    background-size: cover;
+    width: 290px;
+    height:630px;
+    position: relative;
+}
+
+.main_mobile_container .mobile_fraim1{
+    transform:perspective(900px) rotateY(-15deg);
+}
+
+.side{
+    transform: translateX(200px);
+}
+
+.main_mobile_container .mobile_fraim2{
+    transform:perspective(900px) rotateY(15deg);
+}
+
+.mobile_fraim1 div{
+    position: absolute;
+    width: 95%;
+    height: 98%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    border-radius: 45px;
+}
+.main_mobile_container .Mfraim .mySwiper{
+    position: absolute;
+    width: 95%;
+    height: 98%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    border-radius: 45px;
+}
+
+.main_mobile_container .Mfraim div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media (max-width:700px){
+    .Tap_section_container .Tap_head_container p{
+        width: 100%;
+}
+    .main_mobile_container .Mfraim{
+        width: 150px;
+        height:330px;    
+    }
+    .mobile_fraim1 div{
+        border-radius: 20px;
+
+    }
+    .main_mobile_container .Mfraim .mySwiper{
+        border-radius: 20px;
+    }
+}
+
+@media (max-width:480px){
+    
+    .Tap_section_container{
+        padding: 0 1rem 0 1rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .Tap_section_container .main_mobile_container{
+        gap: 1rem;
+    }
+    .main_mobile_container .Mfraim{
+        width: 100px;
+        height:220px;    
+    }
+
+}

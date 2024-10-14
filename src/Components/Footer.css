@@ -1,0 +1,184 @@
+
+.Home_footer_section{
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: rgb(12, 12, 12);
+    padding-top: 1rem;
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+.Home_footer_section .footer_mainContent{
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    gap: 2rem;
+}
+
+.Home_footer_section .Home_footer_info{
+    width:fit-content;
+    text-align: start;
+    width: 40%;
+}
+.Home_footer_section .Home_footer_info .footer_info{
+    font-family: "Comic Neue", cursive;
+    font-size: 0.8rem;  
+    font-weight: 600;
+    color: rgb(163, 163, 163);
+    margin-top: 0;
+    text-align: start;
+    width:100%;
+}
+
+.Home_footer_section .Home_Footer_logo_container{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+
+.Home_footer_section .Home_Footer_logo_container img{
+    width: 8rem;
+    height:auto;
+    margin-bottom: 1rem;
+}
+.Home_footer_section .Home_Footer_logo_container h1{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+
+.Home_footer_section h2{
+    font-size: 1rem;
+    /* background: linear-gradient(90deg, rgba(255,76,0,1) 1%, rgba(253,190,49,1) 60%);
+   background-size: contain;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    margin-bottom:0.6rem;
+    width: fit-content;
+    color: rgb(253, 253, 253);
+
+}
+
+
+.Importent p{
+    font-size: 0.8rem;  
+    font-weight: 600;
+    color: rgb(163, 163, 163);
+    margin-bottom: 0.3rem;
+    padding-bottom: 0;
+    width: fit-content;
+    text-align: start;
+}
+
+.contact_us , .Importent{
+    width:fit-content;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.2rem;
+    margin-top: 0.8rem;
+}
+
+.contact_us p{
+    font-size: 0.7rem;  
+    font-weight: 400;
+    color: rgb(163, 163, 163);  
+    margin-bottom: 0.3rem;
+    padding-bottom: 0;
+    width:fit-content;
+    text-align: start;
+}
+
+.contact_us h2 , .Importent h2{
+    font-family: "Comic Neue", cursive;
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+
+
+
+.contact_us .social_media_icons{
+    display: flex;
+    gap:1rem;
+}
+.contact_us .social_media_icons img{
+    width:2rem;
+    height: auto;
+}
+
+
+.Home_footer_section .footer_rights{
+width: 100%;
+margin-top: 1rem;
+font-size: 0.8rem;  
+font-weight: 400;
+color: rgb(163, 163, 163);
+display: flex;
+justify-content:center;
+align-items:center;
+}
+
+.Home_footer_section .footer_rights p{
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    width: fit-content;
+}  
+
+.Home_footer_section hr{
+    width:100%;
+    border-color: #FF8900 ;
+}
+
+
+
+@media (max-width: 580px){
+    .contact_us .social_media_icons{
+        gap:0.7rem;
+    }
+    .Home_footer_section{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .Home_footer_section .footer_mainContent{
+        flex-direction: column;
+        padding-left:0;
+        padding-right:0;
+        gap: 1rem;
+    }
+
+    .other_info_contaner{
+        display: flex;
+        gap: 1rem;
+    }
+
+    .Home_footer_section .Home_footer_info{
+        width: 100%;
+        text-align: start;
+        box-sizing: border-box;
+    }
+
+    .Home_footer_section .Home_footer_info .footer_info{
+        width:100%;
+    }
+
+
+    .Home_footer_section .footer_rights{
+        font-size: 0.5rem;  
+        font-weight: 300;
+    }
+
+}

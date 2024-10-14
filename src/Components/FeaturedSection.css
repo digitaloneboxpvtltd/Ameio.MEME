@@ -1,0 +1,497 @@
+.Featured_Section_container{
+    width: 100vw;
+    height: fit-content;
+    box-sizing: border-box;
+    padding: 1rem 2rem 0rem 2rem;
+    position: relative;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.Featured_Section_container .main_container{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.Featured_Section_container h1{
+    font-size:4rem;
+    line-height: 1;
+}
+
+.Featured_Section_container .featured_Head{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+.featured_slider_container{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.featured_Head .featured_companies{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    animation: logo_anim linear 10s infinite alternate;
+}
+
+@keyframes logo_anim {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+
+.featured_companies img{
+    width: 10rem;
+    height: auto;
+}
+
+
+/* featured information container */
+
+
+.swiper-wrapper {
+    margin-top: 1rem;
+    padding-left: 1rem;
+}
+
+.swiper-slide {
+    width: fit-content !important;
+    display: flex;
+    justify-content: center;
+}
+
+.about_img_scroler_container{
+    width: 40%;
+}
+
+.featured_info_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+.featured_info_container .featured_info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.featured_info .social_media_icons{
+    display: flex;
+    gap: 0.7rem;
+}
+.featured_info .social_media_icons img{
+    width:2rem;
+    height: auto;
+}
+
+.featured_info p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.3;
+    width:100%;
+    text-align: center;
+}
+
+.about_img_scroler_container{
+    width:40%;
+}
+
+.about_img_scroler_container img{
+    width: 60%;
+}
+
+
+/* why choose us section */
+
+
+.why_info_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.why_info{
+width: 100%;
+}
+
+.why_info_container h1{
+    font-size:4rem;
+    line-height: 1;
+}
+.why_info ul{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    column-gap:5%;
+    row-gap: 2rem;
+    margin-top: 1rem;
+}
+    .why_info li{
+        line-height:1;
+        width:262px;
+        height: 262px;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        background-image: linear-gradient( 64.5deg,  rgba(245,116,185,1) 14.7%, rgba(89,97,223,1) 88.7% );
+        box-shadow: inset 0 0 10px 1px rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        justify-content:start;
+        align-items: center;
+        gap: 1rem;
+        padding: 0.3rem;
+        box-sizing: border-box;
+    }
+
+.why_info li p{
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1.1;
+    text-align: start;
+    width:80%;
+    margin-bottom: 1rem;
+}
+
+.why_info li img{
+    width: 70px;
+    height: auto;
+    align-self: flex-end;
+    border-radius: 50%;
+    border: solid 1px rgb(255, 255, 255);
+}
+
+.why_info strong{
+    font-family: "Comic Neue", cursive;
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: black; 
+}
+        
+
+
+
+/* meme section style */
+
+.meme_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+    position: relative;
+}
+
+.meme_img{
+   animation-name: meme_img_anim;
+   animation-duration: 6s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+   animation-direction:alternate-reverse;
+}
+
+@keyframes meme_img_anim {
+    0%{
+        scale:0.9;
+        /* rotate:-5deg; */
+    }
+    100%{
+        scale: 1.03;
+        /* rotate: 5deg; */
+    }
+}
+.meme_container .meme_cat_img{
+    position: absolute;
+    bottom: 0%;
+    z-index: -1;
+    width: 90%;
+}
+
+.meme_container::before{
+    content: " ";
+    width: 100%;
+    height: 101%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow:inset 0 -180px 100px -10px rgb(0, 0, 0);
+    z-index: 10;
+}
+
+
+
+
+/*  background color dots animation */
+/* 
+.bg_color_element{
+    position: absolute;
+    width: 0.1%;
+    height: 0.1%;
+    z-index:-1;
+    
+}
+
+#bg_dot1{
+    box-shadow: 0 59px 300px 45px #0e378ab0 ,0 -57px 300px 45px #0e378ab0;
+    top: 20%;
+    left:1%;
+}
+
+#bg_dot2{
+    box-shadow:0 59px 600px 85px #9b45363a ,0 -57px 600px 85px #9b45363a;
+    top: 30%;
+    left: 50%;
+}
+
+#bg_dot3{
+    box-shadow: 0 59px 400px 45px #ed4fc07b ,-50px -57px 400px 45px #ed4fc07d;
+    top: 25%;
+    left: 95%;
+} */
+
+
+@media (max-width:999px) {
+    .meme_container::before{
+        /* content: " ";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-shadow:inset 0 -180px 100px -10px rgb(0, 0, 0);
+        z-index: 10; */
+        box-shadow:inset 0 -100px 100px -10px rgb(0, 0, 0);
+
+    }
+
+    .why_info li{
+        width:210px;
+        height: 210px;
+        gap: 0.5rem;
+    }
+
+    .why_info strong{
+        font-size: 1rem;
+    }
+    
+.why_info li img{
+    width: 40px;
+}
+}
+
+
+
+@media (max-width:900px) {
+    .about_img_scroler_container img{
+        width: 90%;
+    }
+}
+
+@media (max-width:700px) {
+    .about_img_scroler_container img{
+        width: 190%;
+    }
+}
+
+
+@media (max-width:600px){
+    
+    /* featured information container */
+    
+    .featured_info_container{
+        width: 100%;
+        flex-direction:column;
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+
+    .about_img_scroler_container{
+        width: 100%;
+    }
+
+    .featured_info_container .featured_info{
+        width: 100%;
+        gap: 1rem;
+    }
+    
+
+    .featured_info .social_media_icons img{
+        width:1.5rem;
+    }
+    
+    
+    .about_img_scroler_container{
+        width:100%;
+    }
+    
+    .about_img_scroler_container img{
+        width: 60%;
+    }
+
+    .featured_info p{
+        width:100%;
+        font-size: 1rem;
+    }
+
+    .Featured_Section_container h1{
+        font-size:2.5rem;
+    }
+
+
+    /* why invest */
+    .why_info li{
+        width:200px;
+        height: 200px;
+        gap: 0.5rem;
+    }
+
+    .why_info strong{
+        font-size: 1rem;
+    }
+    
+    .why_info li p{
+        width:90%;
+    font-size: 0.7rem;
+    }
+    .why_info li img{
+        width: 40px;
+    }
+
+}
+
+
+@media (max-width:550px) {
+    .why_info_container{
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    .why_info li{
+        width:170px;
+        height: 170px;
+        gap: 0.5rem;
+
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+    }
+
+    .why_info strong{
+        font-size: 0.9rem;
+    }
+    
+    .why_info li p{
+        width:90%;
+    font-size: 0.6rem;
+    }
+    .why_info li img{
+        width: 40px;
+    }
+
+}
+
+
+
+/* mobile responsive */
+
+@media (max-width:480px) {
+
+    .featured_info{
+        gap: 1.5rem;
+        margin-bottom: 1.5rem;
+        }
+        
+    
+    .Featured_Section_container{
+       padding: 0.5rem;
+       padding-bottom: 0rem;
+    }
+    
+    .Featured_Section_container h1{
+        font-size:2.5rem;
+    }
+
+
+    .why_info_container{
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    
+    .featured_Head .featured_companies{
+        gap: 2rem;
+        animation: logo_anim_2 linear 7s infinite alternate;
+
+    }
+    
+    @keyframes logo_anim_2 {
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(-100%);
+        }
+    }
+    .featured_companies img{
+        width: 7rem;
+    }
+    
+} 
+
+
+@media (max-width:390px) {
+
+    .why_info li{
+        width:100%;
+        height:fit-content;
+        gap: 0.5rem;
+        padding: 1rem;
+        border-top-left-radius:0%;
+        border-bottom-left-radius:0%;
+        border-bottom-right-radius:0%;
+        border-radius: 1rem;
+    }
+
+    .why_info strong{
+        font-size:1.3rem;
+    }
+    
+    .why_info li p{
+        width:100%;
+    font-size: 0.8rem;
+    }
+    .why_info li img{
+        width: 50px;
+    }
+}

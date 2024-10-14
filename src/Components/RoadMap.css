@@ -1,0 +1,309 @@
+
+.roadmap_section_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    padding-bottom: 5rem;
+    color: white;
+    gap: 1rem;
+}
+
+a{
+    text-decoration: none;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.outer_roadmap_container{
+    width: 100%;
+    height:fit-content;
+    padding-bottom: 3rem;
+    display: grid;
+    justify-items:center;
+    overflow-x:scroll;  
+    white-space: nowrap;
+    -ms-overflow-style: none; 
+      scrollbar-width: none; 
+    
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+.roadmap_section_container .roadmap_points_container{
+    width: fit-content;
+    display: flex;
+    justify-content:center;
+    gap:6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 6rem;
+    position: relative;
+
+    &::before{
+        content: "";
+        position:absolute;
+        width:80%;
+        top:27%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-top: dashed white 2px;
+    }
+}
+
+
+
+.roadmap_points_container .roadmap_point{
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: center;
+    gap:2rem;
+    width:fit-content;
+}
+
+.roadmap_point .roadmap_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.roadmap_point .roadmap_info .point_heading{
+    font-size:1.5rem;
+    text-align: start;
+    font-family: "Comic Neue", cursive;
+    font-weight: 600;
+    background: linear-gradient(90deg, rgba(255,76,0,1) 1%, rgb(255, 145, 0) 60%);
+    background-size: contain;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.roadmap_info ul{
+    width: fit-content;
+}
+
+.roadmap_info ul li{
+    font-family: "Comic Neue", cursive;
+    color: #E8E8E8;
+    font-weight: 200;
+}
+
+
+.roadmap_point .roadmap_phase{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    position: relative;
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1;
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 2%;
+        left: 2%;
+        width: 97%;
+        height: 97%;
+        border-radius: 50%;
+        border: 2px white dashed;
+    }
+}
+
+.roadmap_phase .roadmap_img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width:90%;
+    height:90%;
+    border-radius: 50%;
+    z-index: 99;
+}
+
+
+.phase1{
+    background: rgb(244,220,8);
+    background: linear-gradient(180deg, rgba(244,220,8,1) 0%, rgba(249,90,76,1) 100%);
+
+    box-shadow: 0 -14px 29px -9px #f4dc08 , 0 12px 32px 1px #f95a4c;
+
+}
+
+.phase2{
+    background: rgb(42,247,87);
+    background: linear-gradient(180deg, rgba(42,247,87,1) 0%, rgba(33,173,226,1) 100%);
+    box-shadow: 0 -14px 29px -9px  rgba(42,247,87,1) , 0 12px 32px 1px rgba(33,173,226,1);
+}
+
+.phase3{
+    background: rgb(70,44,229);
+background: linear-gradient(180deg, rgba(70,44,229,1) 0%, rgba(0,255,148,1) 100%);
+box-shadow: 0 -14px 29px -9px rgba(70,44,229,1) , 0 12px 32px 1px rgba(0,255,148,1);
+}
+
+.phase4{
+    background: rgb(241,187,16);
+background: linear-gradient(180deg, rgba(241,187,16,1) 0%, rgba(255,92,0,1) 100%);
+box-shadow: 0 -14px 29px -9px rgba(241,187,16,1) , 0 12px 32px 1px  rgba(255,92,0,1);
+
+}
+
+.phase5{
+    background: rgb(80,223,115);
+background: linear-gradient(180deg, rgba(80,223,115,1) 0%, rgba(214,180,38,1) 100%);
+box-shadow: 0 -14px 29px -9px rgba(80,223,115,1) , 0 12px 32px 1px  rgba(214,180,38,1);
+
+}
+
+
+
+/* copy contract section style */
+
+.copy_contract_container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+.copy_contract_container h1{
+    font-size: 1.7rem;
+}
+.copy_contract_container p{
+    width:100%;
+    font-size: 1.2rem;
+    font-weight: 400;
+    background: linear-gradient(90deg, rgba(255,76,0,1) 1%, rgb(255, 145, 0) 60%);
+    background-size: contain;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.copy_contract_container button{
+    background:linear-gradient(90deg, rgba(255,76,0,1) 1%, rgb(255, 145, 0) 60%);
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius:0.3rem;
+    text-align: center;
+    box-sizing: border-box;
+    display: block;
+    &:hover{
+        cursor: pointer;
+        transition: all ;
+        transition-duration: 0.2s;
+        transform: scale(1.05);
+        background: linear-gradient(90deg,rgba(253,190,49,1) 1%, rgb(255, 102, 36)   60%);
+    }
+    &:active {
+        transition:scale ;
+        transition-duration: 0.1s;
+        transform: scale(0.8); /* Scale down on click */
+      }  
+
+}
+
+
+
+/* mobile responsive */
+@media (max-width:540px) {
+    .copy_contract_container p{
+        width: fit-content;
+        font-size: 0.8rem;
+    }
+    .copy_contract_container button{
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
+        padding-top: 0.1rem;
+        padding-bottom: 0.1rem;
+        font-size: 0.6rem;
+    }
+}
+
+
+@media (max-width:480px) {
+    .roadmap_section_container{
+        padding: 1rem;
+        padding-bottom: 3rem;  
+         
+    }
+    
+    .roadmap_section_container .roadmap_points_container{
+        gap: 3rem;
+        margin-top: 2rem;
+    }
+    
+    .roadmap_points_container .roadmap_point{
+        align-items: center;
+        justify-content: center;
+        gap:2rem;
+    }
+
+    .roadmap_point .roadmap_info .point_heading{
+        font-size:1rem;
+        line-height: 0.9;
+    }
+    
+    .roadmap_info ul li{
+        font-family: "Comic Neue", cursive;
+        color: #E8E8E8;
+        font-weight: 200;
+        font-size: 0.6rem;
+    }
+    
+    .roadmap_point .roadmap_phase{
+        width: 4rem;
+        height: 4rem;
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1;
+    
+        &::before{
+            content: "";
+            position: absolute;
+            top: 2%;
+            left: 2%;
+            width: 97%;
+            height: 97%;
+            border-radius: 50%;
+            border: 2px white dashed;
+        }
+    }
+}
+
+@media (max-width:360px) {
+    .roadmap_points_container .roadmap_point{
+        gap:1rem;
+    }
+
+    .copy_contract_container p{
+        width: fit-content;
+        font-size: 0.5rem;
+    }
+
+    .copy_contract_container button{
+        font-size: 0.4rem;
+        font-weight: 600;
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+        padding-top: 0.1rem;
+        padding-bottom: 0.1rem;
+    }
+}
